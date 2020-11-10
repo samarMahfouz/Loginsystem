@@ -1,0 +1,102 @@
+/* START MAIN RULES */
+body{  background-color: #f3f7ff}
+/* END MAIN RULES */
+
+/* START BOOTSTRAP  */
+.form-group{position: relative; margin-bottom: 25px;}
+/* END BOOTSTRAP */
+
+/* START SIGN UP FORM */
+.signup, .login{  padding-top: 40px;  padding-bottom: 40px}
+.signup h2, .login h2{color: #d22d33;    margin-bottom: 25px; }
+.signup h2 span, .login h2 span{font-size: 19px}
+.signup h2 img, .login h2 img{border-radius: 50%; width: 16px}
+.contentform{
+  max-width: 350px;
+  border: 2px solid #e5eefb;
+  padding-bottom: 61px
+}
+.imageform img{border: 2px solid #a2daff}
+.contentform h4{
+  color: #1b53a7;
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+.contentform h4::first-letter{ font-size:23px}
+.contentform input[type = 'submit']{ margin-top: 8px; margin-bottom: 8px}
+.contentform .alerts{display: none}
+.contentform i{
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 16px;
+  color: #5cb85c;
+}
+.contentform  span{
+  color:#b91818;
+   padding:10px;
+   font-size: 10px;
+   font-weight: bold
+ }
+ .contentform .show{
+   color: #305f30;
+  font-size: 10px;
+  position: absolute;
+  top: 31px;
+  right: 5px;
+  cursor:pointer;
+ }
+.contentform p{color:#2758a7; padding-top: 55px}
+.contentform p a{color:#d22d33;  font-weight: bold}
+/* END SIGN UP FORM */
+
+/* START LOGIN FORM */
+  .login .contentform{padding-bottom: 150px}
+/* END LOGIN FORM */
+
+/* START MEDIA QUERIES */
+  @media (max-width:768px) {
+    .login p, .signup p{ padding-top: 5px !important}
+  }
+  @media (max-width:991px) {
+    .imageform{display: none}
+    .contentform{
+      max-width: 100%;
+      padding-bottom: 15px
+    }
+    .login .contentform{
+        background:url('../images/imagelogin.jpeg');
+        background-size: cover;}
+    .signup .contentform{
+         background:url('../images/imageform.jpeg');
+         background-size: cover;}
+    .contentform form{
+      max-width: 350px;
+      background-color: #d3ebff;
+      padding: 30px;
+      margin: 50px auto 10px auto
+    }
+    .row {margin-right: 0px;  margin-left: 0px}
+    .login p{ padding-top: 50px}
+  }
+  @media (min-width:991px) {
+    .login h4, .signup h4{ margin-top: 39px !important}
+  }
+  /* END MEDIA QUERIES */
+
+  /* START pwstrength STYLING */
+
+.progress {
+    height: 3px;
+}
+.progress-bar{
+      background-image: linear-gradient(to right, yellow, green)
+}
+.password-verdict{
+  position: absolute;
+  color: green !important;
+  left: 5px;
+  top: 25px;
+}
+/* END pwstrength STYLING */
