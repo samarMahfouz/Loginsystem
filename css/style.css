@@ -85,7 +85,7 @@ body{  background-color: #f3f7ff}
   }
 @media (max-width: 991px){
   .contentform form{
-    padding: 99px 30px;
+    padding: 30px 30px 99px 30px;
   }
 }
   /* END MEDIA QUERIES */
