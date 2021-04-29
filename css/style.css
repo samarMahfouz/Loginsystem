@@ -83,6 +83,11 @@ body{  background-color: #f3f7ff}
   @media (min-width:991px) {
     .login h4, .signup h4{ margin-top: 39px !important}
   }
+@media (max-width: 991px){
+  .contentform form{
+    padding: 99px 30px;
+  }
+}
   /* END MEDIA QUERIES */
 
   /* START pwstrength STYLING */
